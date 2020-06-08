@@ -28,14 +28,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '
-    
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(build.sourcesdirectory)'
-    Contents: 'Build Files'
-    TargetFolder: '*/bin/$(buildConfiguration)/*'
-    OverWrite: true
+    Contents: '**\bin\$(BuildConfigration)\**'
+    TargetFolder: '$(build.artifactsstagingdirectory)'
+
+    
+
