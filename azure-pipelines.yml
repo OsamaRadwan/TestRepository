@@ -36,5 +36,6 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(build.sourcesdirectory)'
+    Contents: 'Build Files'
     TargetFolder: '*/bin/$(buildConfiguration)/*'
-    OverWrite: true'
+    OverWrite: true
