@@ -31,4 +31,11 @@ steps:
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    configuration: '
+    
+    - task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(build.sourcesdirectory)'
+    Contents: '**'
+    TargetFolder: '**\bin\$(buildConfiguration)\**'
+    OverWrite: true'
