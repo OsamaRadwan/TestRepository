@@ -10,7 +10,7 @@ namespace VSTestProject.Controllers
     {
         public ActionResult Index()
         {
-            return View("About");
+            return View("Contact");
         }
 
         public ActionResult About()
