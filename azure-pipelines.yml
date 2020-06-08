@@ -35,4 +35,4 @@ steps:
     TargetFolder: '$(build.artifactsstagingdirectory)'
 
     
-
+- task: PublishBuildArtifacts@1
