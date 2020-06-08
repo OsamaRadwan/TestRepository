@@ -34,9 +34,11 @@ steps:
     Contents: '**\bin\$(BuildConfigration)\**'
     TargetFolder: '$(build.artifactsstagingdirectory)'
 
-
-
-
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: IISWebAppDeploymentOnMachineGroup@0
   inputs:
@@ -52,4 +54,4 @@ steps:
     #xmlVariableSubstitution: # Optional
     #jSONFiles: # Optional
     
-- task: PublishBuildArtifacts@1
+
