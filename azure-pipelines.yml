@@ -40,9 +40,9 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- task: IISWebAppDeploymentOnMachineGroup@0
-  inputs:
-    webSiteName: TestWebSite
+#- task: IISWebAppDeploymentOnMachineGroup@0
+  #inputs:
+    #webSiteName: TestWebSite
     #virtualApplication: # Optional
     #package: '$(System.DefaultWorkingDirectory)\**\*.zip' 
     #setParametersFile: # Optional
@@ -54,4 +54,6 @@ steps:
     #xmlVariableSubstitution: # Optional
     #jSONFiles: # Optional
     
+
+- task: PublishBuildArtifacts@1
 
