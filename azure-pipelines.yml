@@ -47,7 +47,7 @@ steps:
 
 - task: IISWebAppDeploymentOnMachineGroup@0
   inputs:
-    webSiteName: TestWebSite
+    webSiteName: Default Web Site
     #virtualApplication: # Optional
     #package: '$(System.DefaultWorkingDirectory)\**\*.zip' 
     #setParametersFile: # Optional
