@@ -44,8 +44,8 @@ steps:
     
 
 - task: PublishBuildArtifacts@1
-  inputs:
-     TargetPath: '$(System.DefaultWorkingDirectory)\release\Publish.zip'
+#  inputs:
+#     TargetPath: '$(System.DefaultWorkingDirectory)\release\Publish.zip'
     
 
 #- task: IISWebAppDeploymentOnMachineGroup@0
